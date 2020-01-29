@@ -7,8 +7,7 @@ let ctx = canvas.getContext("2d")
 
 console.log(ctx)
 
-ctx.fillStyle = "blue"
+ctx.fillStyle = "white"
 ctx.fillRect(0,0,canvas.width,canvas.height)
 
-ctx.fillStyle = "red"
-ctx.fillRect(0,0,400,100)
+
