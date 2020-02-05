@@ -7,7 +7,8 @@ class Shape {
 		this.height= height
 	}
 	draw() {
-		ctx.fillRect(
+		CTX.fillStyle = "green"
+		CTX.fillRect(
 			this.x,
 			this.y,
 			this.width,

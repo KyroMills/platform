@@ -1,13 +1,14 @@
-let canvas = document.getElementById("display")
+let CANVAS = document.getElementById("display")
 
-console.log(canvas)
-canvas.width = document.body.clientWidth
-canvas.height = document.body.clientHeight
-let ctx = canvas.getContext("2d")
+console.log(CANVAS)
+CANVAS.width = document.body.clientWidth
+CANVAS.height = document.body.clientHeight
+let CTX = CANVAS.getContext("2d")
 
-console.log(ctx)
+console.log(CTX)
 
-ctx.fillStyle = "white"
-ctx.fillRect(0,0,canvas.width,canvas.height)
-
+function ERASE() {
+CTX.fillStyle = "white"
+CTX.fillRect(0,0,CANVAS.width,CANVAS.height)
+}
 

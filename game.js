@@ -1,5 +1,12 @@
 
+let hero = new Hero()
+let shapes = []
+ERASE()
+hero.draw()
+
 window.addEventListener("keydown", event => {
+	console.log(event.code)
+	if (event.code === 'KeyS'){
 	let colorIndex = Math.random()
 	let color = "red"
 	
@@ -12,10 +19,22 @@ window.addEventListener("keydown", event => {
 	if (colorIndex < 0.5 && colorIndex > 0.4) {
 		color = "orange"
 	}
-	ctx.fillStyle = color
-	let x = Math.random() * canvas.width
-	let y = Math.random() * canvas.height
+	CTX.fillStyle = color
+	let x = Math.random() * CANVAS.width
+	let y = Math.random() * CANVAS.height
 	let height = Math.random() * 500
 	let width = Math.random() * 500
-	new Shape(x,y,width,height).draw()
+	let s = new Shape(x,y,width,height)
+	shapes.push(s)
+}
+if (event.code ==="ArrowRight"){
+	hero.moveRight()
+}
+
+ERASE()
+console.log(shapes)
+shapes.forEach(s =>s.draw())
+
+
+hero.draw()
 })
