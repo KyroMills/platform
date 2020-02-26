@@ -9,7 +9,7 @@ class Sprite {
 	}
 draw(x,y,width,height){
 	if (this.loaded) {
-		CTX.drawImage(this.image,x-50,y-50,width,height)
+		CTX.drawImage(this.image,x,y,width,height)
 		}
 	}
 }

@@ -18,11 +18,11 @@ if (keyPressed["ArrowLeft"]){
 	hero.moveLeft()
 }
 if (keyPressed["ArrowUp"]){
-	hero.moveUp()
+	hero.jump()
 }
-if (keyPressed["ArrowDown"]){
-	hero.moveDown()
-}
+
+
+hero.step()
 
 ERASE()
 hero.draw()
